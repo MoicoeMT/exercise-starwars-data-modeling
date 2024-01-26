@@ -62,6 +62,7 @@ class Vehicle(Base):
 class Favorit(Base):
     __tablename__ = "favorit"
     id = Column(Integer, primary_key=True)
+    user_id = Column(Integer, ForeignKey("user.id"))
     people_id = Column(Integer, ForeignKey("people.id"))
     planet_id = Column(Integer, ForeignKey("planet.id"))
     vehicle_id = Column(Integer, ForeignKey("vehicle.id"))
