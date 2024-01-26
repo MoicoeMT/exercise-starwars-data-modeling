@@ -55,7 +55,6 @@ class Vehicle(Base):
     manufacturer = Column(String(250), nullable=True)
     model = Column(String(250), nullable=True)
     passengers = Column(Integer, nullable=True)
-    terrain = Column(String(250), nullable=True)
     cargo_capacity = Column(Integer, nullable=True)
     cost_in_credits = Column(Integer, nullable=True)
     favorit = relationship("favorit")
